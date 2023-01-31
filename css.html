@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Manual html</title>
+    <link rel="stylesheet" href="css.css"type="text/css">
+</head>
+<body>
+    <header> PROPIEDADES CSS </header>
+    <div class="container">
+        <div class="lbl-menu">
+             
+            <label for="radio1">-Font-family-</label>
+            <label for="radio2">-Font-size-</label>
+            <label for="radio3">-Color y background-color-</label>
+            <label for="radio4">-Width-</label>
+            <label for="radio5">-Max-width o min-width-</label>
+            <label for="radio6">-Height-</label>
+            <label for="radio7">-Max-height o min-height-</label>
+            <label for="radio8">-Padding-</label>
+            <label for="radio9">-Margin-</label>
+            <label for="radio10">-Border-</label>
+           
+        </div>
+        
+        <div class="content">
+           
+            <input type="radio" name="radio" id="radio1" checked>
+            <div class="tab1">
+                <p>Define la familia tipográfica. Tenemos 3 opciones para definir la elección de la familia tipográfica:
+                    1) usar una de las fuentes más comunes (web safe fonts) que muy probablemente tenga instalada el usuario (Arial, Verdana, Trebuchet, Georgia, san serif, Times, etc). 
+                    2) usar una fuente de Google Font, que en este momento es lo más recomendable. No es necesario que el usuario tenga instalada la fuente, porque el navegador la llama del servidor de Google. 
+                    3) subir nuestra propia fuente con la propiedad  @font-face.
+                </p>
+            </div>
+            
+            <input type="radio" name="radio" id="radio2">
+            <div class="tab2">
+                <p>Define el tamaño de la fuente y el valor se puede escribir en pixels o rems. En este momento se recomienda usar rems por una cuestión de usabilidad. Los dos son valores relativos, el pixel es un valor relativo a la resolución de la pantalla, pero el rem es relativo al tamaño de la fuente definida por el usuario en el navegador. (1rem=16px)</p>
+            </div>
+            
+            <input type="radio" name="radio" id="radio3">
+            <div class="tab3">
+                <p>Color define el color de la tipografía y background-color, el color de fondo de un elemento. Los colores se pueden escribir de varias formas, las más utilizadas son:
+                   Sistema hexadecimal, por ejemplo: #FF0000 (es rojo). Son 3 pares de caracteres que corresponden a RGB. Si los pares repiten sus caracteres, se puede resumir en 3 por ejemplo: #F00 también es el mismo rojo. La escala que se utiliza es la siguiente: 0987654321ABCDEF donde 0 es negro y F es blanco, por lo tanto: #000 es negro y #FFF es blanco..</p>
+            </div>
+            
+            <input type="radio" name="radio" id="radio4">
+            <div class="tab4">
+                <p>Define el ancho de un elemento, el valor se puede escribir en pixels, rems o porcentaje. Las etiquetas de bloque tienen por defecto un width de 100%.</p>
+            </div>
+
+            <input type="radio" name="radio" id="radio5">
+            <div class="tab5">
+                <p>Definen el ancho máximo o mínimo de un elemento. Muy importante para adaptar el sitio a los diferentes tamaños de pantalla. Por ejemplo:
+                   div.container {max-width:1200px; margin: 0 auto}</p>
+            </div>
+
+            <input type="radio" name="radio" id="radio6">
+            <div class="tab6">
+                <p>Define el alto de un elemento, el valor se puede escribir en pixels, rems o porcentaje. Esta propiedad hay que usarla con cuidado porque es preferible dejar las cajas con altura sin definir para que se estiren automáticamente cuando el contenido se modifique o se acomode a otros dispositivos.</p>
+            </div>
+
+            <input type="radio" name="radio" id="radio7">
+            <div class="tab7">
+                <p>Definen el alto máximo o mínimo de un elemento. Por ejemplo:
+                   .content {min-height: 300px}
+                   Esta regla puede ser necesaria en una página con muy poco contenido (por ejemplo el resultado de una búsqueda sin coincidencias), para que tenga un mínimo de altura y deje espacio entre la cabecera y el footer.</p>
+            </div>
+
+            <input type="radio" name="radio" id="radio8">
+            <div class="tab8">
+                <p>Es la distancia desde el borde de un elemento hasta su contenido. Esta propiedad es imprescindible si la caja tiene color de fondo o borde. Si no lo tiene, se vería igual usando margin para generar los espacios. Hay que tener en cuenta que el padding por defecto aumenta el tamaño de una caja, para que esto no suceda, se usa box-sizing: border-box. Esta propiedad se suele definir en una regla con selector universal para que todos los elementos del sitio se comporten igual. El código es:
+                  * {box-sizing: border-box} </p>
+            </div>
+
+            <input type="radio" name="radio" id="radio9">
+            <div class="tab9">
+                <p>Es la distancia entre un elemento y otro (desde el borde de un elemento hacia afuera). Muchas etiquetas HTML tienen margin por defecto por ejemplo: el body, los encabezados, los párrafos y las listas.</p>
+            </div>
+
+            <input type="radio" name="radio" id="radio10">
+            <div class="tab10">
+                <p>La propiedad border permite definir en una única regla todos los bordes de los elementos seleccionados. Se puede utilizar border para definir el o los valores siguientes: border-width, border-style, border-color.
+                 |Sintaxis
+                 border: [border-width || border-style || border-color | inherit] ;
+                </p>
+            </div>
+            
+        </div>
+    </div>
+
+    <nav>
+        <!-- <li> -->
+            <a href="index.html">Inicio</a>
+        <!-- </li> -->
+    </nav>
+</body>
+</html>
